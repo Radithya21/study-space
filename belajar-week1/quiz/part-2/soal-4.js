@@ -1,21 +1,22 @@
 // Problem
-// Pada tugas ini kamu diminta untuk "memecah" sebuah kalimat dan menampilkan setiap kata didalamnya.
-//  Untuk soal nomor ini, gunakan akses satu per satu karakter dari string untuk mengambil setiap huruf dalam kata.
-//   Terasa manual? Tidak apa-apa, kita coba ini dulu untuk saat ini.
+// Mirip seperti soal nomor 3, tapi tampilkan juga panjang kata masing-masingnya!
 
-// Hints
-// Saat kamu mendapatkan tiap huruf, untuk membentuk setiap kata kamu tinggal menggunakan simbol + untuk membentuk kata
-//  tersebut!
 
-let word = 'wow JavaScript is so cool';
-let exampleFirstWord = word[0] + word[1] + word[2];
-let exampleSecondWord = word[4] + word[5] + word[6] + word[7] + word[8] + word[9] + word[10] + word[11] + word[12] + word[13];
-let exampleThirdWord = word[15] + word[16];
-let exampleFourthWord = word[18] + word[19];
-let exampleFifthWord = word[21] + word[22] + word[23] + word[24];
+let word4 = 'wow JavaScript is so cool';
+let exampleFirstWord4 = word4.substring(0, 3);
+let exampleSecondWord4 = word4.substring(4, 14);
+let exampleThirdWord4 = word4.substring(15, 17);
+let exampleFourthWord4 = word4.substring(18, 20);
+let exampleFifthWord4 = word4.substring(21, 25);
 
-console.log('First Word: ' + exampleFirstWord);
-console.log('Second Word: ' + exampleSecondWord);
-console.log('Third Word: ' + exampleThirdWord);
-console.log('Fourth Word: ' + exampleFourthWord);
-console.log('Fifth Word: ' + exampleFifthWord);
+let firstWordLength = exampleFirstWord4.length;
+let SecondWordLength = exampleSecondWord4.length;
+let ThirdWordLength = exampleThirdWord4.length;
+let FourthWordLength = exampleFourthWord4.length;
+let FifthWordLength = exampleFifthWord4.length;
+
+console.log('First Word: ' + exampleFirstWord4 + ', with length: ' + firstWordLength);
+console.log('Second Word: ' + exampleSecondWord4 + ', with length: ' + SecondWordLength);
+console.log('Third Word: ' + exampleThirdWord4 + ', with length: ' + ThirdWordLength);
+console.log('Fourth Word: ' + exampleFourthWord4 + ', with length: ' + FourthWordLength);
+console.log('Fifth Word: ' + exampleFifthWord4 + ', with length: ' + FifthWordLength);
